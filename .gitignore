@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Large raw datasets and archives (> 100MB / multi-GB)
+data/raw/
+*.tar
+*.tar.gz
+*.zip
+*.h5
+*.mat
+
+# Processed intermediate image caches (can be regenerated with step2 scripts)
+data/processed/cached_training_views/
+data/processed/perturbed_test/
+data/processed/consep/
+
+# Model checkpoints
+checkpoints/
+
+# System / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

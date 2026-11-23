@@ -1,0 +1,37 @@
+{
+  "H1_Spatial_Bias": {
+    "comparison": "M4 vs M2 (Clean in-domain Macro-F1)",
+    "paired_diff_mean": -0.03132545241494255,
+    "wilcoxon_raw_p": 1.1436641216278076e-06,
+    "wilcoxon_holm_p": 3.430992364883423e-06,
+    "bca_95_ci": [
+      -0.04028500435161551,
+      -0.022158247969534677
+    ],
+    "inside_equivalence_margin_0.015": false,
+    "verdict": "REJECTED"
+  },
+  "H2_Stain_Robustness": {
+    "comparison": "M5 vs M3 and M2 (Delta-F1 under Macenko & RandStainNA)",
+    "paired_diff_mean": -0.0056603890758620675,
+    "wilcoxon_raw_p": 0.2652079239487648,
+    "wilcoxon_holm_p": 0.5304158478975296,
+    "bca_95_ci": [
+      -0.014024058374874174,
+      0.001988242374015491
+    ],
+    "inside_equivalence_margin_0.015": true,
+    "verdict": "EQUIVALENT"
+  },
+  "H3_Calibration": {
+    "comparison": "M5 vs M3 (ECE and Brier score)",
+    "paired_diff_mean": 0.0025451391183908055,
+    "wilcoxon_raw_p": 0.5361509844660759,
+    "wilcoxon_holm_p": 0.5361509844660759,
+    "bca_95_ci": [
+      -0.00269362446741917,
+      0.008998858217290781
+    ],
+    "verdict": "SUPPORTED (CALIBRATION PRESERVED)"
+  }
+}

@@ -1,0 +1,195 @@
+Filename,Source_Category,WSI_Source,Total_Nuclei,Epithelial,Inflammatory,Stromal,Neutrophil,Lizard_Epithelial,Lymphocyte,Plasma,Eosinophil,Connective,ImagePath,LabelPath
+dpath_1,DigestPath,1800127001_2019-04-30 10_40_02-lv1-1001-22444-3989-3967,2411,554,1460,397,62,554,1064,321,13,397,data/raw/lizard_images2/Lizard_Images2\dpath_1.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_1.mat
+dpath_2,DigestPath,1902160001_2019-06-11 12_36_32-lv1-39045-16016-3312-4096,1161,477,465,219,0,477,365,100,0,219,data/raw/lizard_images2/Lizard_Images2\dpath_2.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_2.mat
+dpath_3,DigestPath,2019_03867_1-1_2019-02-20 20_00_32-lv1-35269-34259-4448-4137,1976,1244,401,331,0,1244,329,70,2,331,data/raw/lizard_images2/Lizard_Images2\dpath_3.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_3.mat
+dpath_4,DigestPath,2019-07501-1-1-1_2019-05-29 08_22_25-lv1-9661-18329-4972-6041,3501,1617,1471,413,1,1617,1279,176,15,413,data/raw/lizard_images2/Lizard_Images2\dpath_4.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_4.mat
+dpath_5,DigestPath,2018_83220_1-1_2019-02-20 18_33_11-lv1-58151-37497-5712-3460,2160,1309,583,268,0,1309,449,115,19,268,data/raw/lizard_images2/Lizard_Images2\dpath_5.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_5.mat
+dpath_6,DigestPath,2019-06-10 23_05_58-lv1-17691-13669-5093-7479,1845,657,786,402,0,657,598,182,6,402,data/raw/lizard_images2/Lizard_Images2\dpath_6.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_6.mat
+dpath_7,DigestPath,D20180498101_2019-05-14 14_58_30-lv1-31412-229-5257-6451,1042,992,49,1,14,992,29,2,4,1,data/raw/lizard_images2/Lizard_Images2\dpath_7.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_7.mat
+dpath_8,DigestPath,1900838001_2019-04-30 10_15_23-lv1-19388-22559-5824-4187,2157,895,832,430,22,895,636,148,26,430,data/raw/lizard_images2/Lizard_Images2\dpath_8.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_8.mat
+dpath_9,DigestPath,D20190284802_2019-06-10 15_06_21-lv1-16310-12946-4950-3583,2149,1225,606,318,0,1225,537,62,7,318,data/raw/lizard_images2/Lizard_Images2\dpath_9.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_9.mat
+dpath_10,DigestPath,D201801775B_2019-05-14 16_11_32-lv1-32649-27988-6434-3613,2829,1577,717,535,35,1577,520,137,25,535,data/raw/lizard_images2/Lizard_Images2\dpath_10.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_10.mat
+dpath_11,DigestPath,2019-06-11 00_01_56-lv1-17033-8410-4332-4842,2168,1073,747,348,1,1073,493,226,27,348,data/raw/lizard_images2/Lizard_Images2\dpath_11.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_11.mat
+dpath_12,DigestPath,1903326001_2019-06-11 12_07_06-lv1-18648-16700-3610-3417,8457,1611,4195,2651,95,1611,3517,363,220,2651,data/raw/lizard_images2/Lizard_Images2\dpath_12.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_12.mat
+dpath_13,DigestPath,D201710920_2019-05-21 11_52_57-lv1-33534-26482-6376-4721,3622,1309,1693,620,67,1309,1280,321,25,620,data/raw/lizard_images2/Lizard_Images2\dpath_13.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_13.mat
+dpath_14,DigestPath,2019-10732-1-4-4_2019-05-28 16_46_57-lv1-36798-25730-4427-4159,1965,1065,635,265,0,1065,442,189,4,265,data/raw/lizard_images2/Lizard_Images2\dpath_14.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_14.mat
+dpath_15,DigestPath,1902160001_2019-06-11 12_36_32-lv1-44190-20016-5916-4469,1949,752,680,517,1,752,541,137,1,517,data/raw/lizard_images2/Lizard_Images2\dpath_15.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_15.mat
+dpath_16,DigestPath,D201803519_2019-05-14 15_14_44-lv1-37789-37126-5701-3477,2021,748,897,376,17,748,711,165,4,376,data/raw/lizard_images2/Lizard_Images2\dpath_16.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_16.mat
+dpath_17,DigestPath,1902386002_2019-06-11 12_23_22-lv1-22889-36998-6328-5024,1763,1130,437,196,1,1130,342,82,12,196,data/raw/lizard_images2/Lizard_Images2\dpath_17.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_17.mat
+dpath_18,DigestPath,2019_05944_1-1_2019-02-20 20_42_06-lv1-39021-20282-4099-4249,2683,1433,906,344,5,1433,665,191,45,344,data/raw/lizard_images2/Lizard_Images2\dpath_18.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_18.mat
+dpath_19,DigestPath,2019-06-11 00_55_09-lv1-28455-933-3881-4470,3205,1089,1506,610,3,1089,720,755,28,610,data/raw/lizard_images2/Lizard_Images2\dpath_19.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_19.mat
+dpath_20,DigestPath,2019-06-10 22_23_19-lv1-16965-13540-6383-3965,5462,1649,2844,969,4,1649,2508,331,1,969,data/raw/lizard_images2/Lizard_Images2\dpath_20.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_20.mat
+dpath_21,DigestPath,D20190286206_2019-06-10 14_58_35-lv1-4261-12473-5210-3023,2223,477,1340,406,0,477,1261,77,2,406,data/raw/lizard_images2/Lizard_Images2\dpath_21.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_21.mat
+dpath_22,DigestPath,2019-06-10 23_52_32-lv1-3419-18441-5260-4255,2432,583,1260,589,107,583,973,168,12,589,data/raw/lizard_images2/Lizard_Images2\dpath_22.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_22.mat
+dpath_23,DigestPath,2018_74969_1-1_2019-02-21 00_48_39-lv1-35186-14908-3285-3747,1971,1840,117,14,0,1840,102,14,1,14,data/raw/lizard_images2/Lizard_Images2\dpath_23.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_23.mat
+dpath_24,DigestPath,2019-06-11 00_25_21-lv1-16078-1535-7044-5614,2201,896,1029,276,0,896,572,456,1,276,data/raw/lizard_images2/Lizard_Images2\dpath_24.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_24.mat
+dpath_25,DigestPath,2019-07805-1-1-1_2019-05-29 05_23_08-lv1-34745-28963-3989-6403,1726,558,830,338,0,558,776,51,3,338,data/raw/lizard_images2/Lizard_Images2\dpath_25.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_25.mat
+dpath_26,DigestPath,2019-06-10 22_13_56-lv1-17041-12331-4567-4502,2065,899,866,300,1,899,535,329,1,300,data/raw/lizard_images2/Lizard_Images2\dpath_26.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_26.mat
+dpath_27,DigestPath,D20170518201_2019-05-14 12_05_30-lv1-39509-31959-5934-5127,3949,2043,1136,770,463,2043,599,62,12,770,data/raw/lizard_images2/Lizard_Images2\dpath_27.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_27.mat
+dpath_28,DigestPath,2019-06-10 23_55_53-lv1-18201-15836-4396-4713,1405,671,382,352,2,671,321,55,4,352,data/raw/lizard_images2/Lizard_Images2\dpath_28.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_28.mat
+dpath_29,DigestPath,D201801775B_2019-05-14 16_11_32-lv1-26744-26137-5178-7271,1291,1127,65,99,0,1127,63,1,1,99,data/raw/lizard_images2/Lizard_Images2\dpath_29.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_29.mat
+dpath_30,DigestPath,2019-06-10 13_44_16-lv1-1845-11483-3788-4007,1959,989,567,403,0,989,420,136,11,403,data/raw/lizard_images2/Lizard_Images2\dpath_30.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_30.mat
+dpath_31,DigestPath,2019-06-10 21_54_03-lv1-17389-15099-4083-3976,1782,569,603,610,0,569,563,12,28,610,data/raw/lizard_images2/Lizard_Images2\dpath_31.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_31.mat
+dpath_32,DigestPath,18-16638A_2019-05-08 02_54_25-lv1-18037-16370-3576-4362,1496,1177,182,137,35,1177,127,18,2,137,data/raw/lizard_images2/Lizard_Images2\dpath_32.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_32.mat
+dpath_33,DigestPath,D20170568101_2019-05-14 12_34_44-lv1-31812-26175-6401-3317,1737,718,687,332,51,718,536,97,3,332,data/raw/lizard_images2/Lizard_Images2\dpath_33.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_33.mat
+dpath_34,DigestPath,2019-07501-1-3-3_2019-05-29 07_53_41-lv1-28802-27730-4306-8351,1770,979,567,224,0,979,506,58,3,224,data/raw/lizard_images2/Lizard_Images2\dpath_34.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_34.mat
+dpath_35,DigestPath,D20170546301_2019-05-14 12_21_38-lv1-27588-24020-5800-7897,8367,2005,4774,1588,12,2005,4436,293,33,1588,data/raw/lizard_images2/Lizard_Images2\dpath_35.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_35.mat
+dpath_36,DigestPath,D20190284705_2019-06-10 15_10_34-lv1-16662-25829-5910-3664,1360,843,313,204,1,843,278,33,1,204,data/raw/lizard_images2/Lizard_Images2\dpath_36.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_36.mat
+dpath_37,DigestPath,D201802734_2019-05-14 15_33_06-lv1-29696-27971-4043-6765,1433,870,209,354,11,870,140,57,1,354,data/raw/lizard_images2/Lizard_Images2\dpath_37.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_37.mat
+dpath_38,DigestPath,2019-06-10 21_26_57-lv1-601-13179-4110-3458,1629,621,797,211,8,621,413,352,24,211,data/raw/lizard_images2/Lizard_Images2\dpath_38.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_38.mat
+dpath_39,DigestPath,1901558001_2019-04-30 10_24_11-lv1-50393-31270-4213-7808,1151,844,102,205,4,844,82,13,3,205,data/raw/lizard_images2/Lizard_Images2\dpath_39.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_39.mat
+dpath_40,DigestPath,2019-06-11 00_30_22-lv1-8563-21916-5988-4778,2582,728,1353,501,3,728,1243,106,1,501,data/raw/lizard_images2/Lizard_Images2\dpath_40.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_40.mat
+dpath_41,DigestPath,D201711541_2019-05-21 11_28_51-lv1-39189-27851-3979-5553,2181,942,798,441,42,942,625,115,16,441,data/raw/lizard_images2/Lizard_Images2\dpath_41.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_41.mat
+dpath_42,DigestPath,D20170503802_2019-05-14 11_50_43-lv1-36345-35501-7085-3382,3644,1350,1437,857,35,1350,996,377,29,857,data/raw/lizard_images2/Lizard_Images2\dpath_42.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_42.mat
+dpath_43,DigestPath,2019-06-10 22_56_10-lv1-747-14359-8009-8045,2282,540,1377,365,1,540,1355,19,2,365,data/raw/lizard_images2/Lizard_Images2\dpath_43.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_43.mat
+dpath_44,DigestPath,D201709874_2019-05-21 12_42_42-lv1-27679-18718-4109-3578,1769,1299,250,220,22,1299,204,19,5,220,data/raw/lizard_images2/Lizard_Images2\dpath_44.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_44.mat
+dpath_45,DigestPath,2019-05891-1-1-1_2019-05-29 03_35_51-lv1-19783-29947-6376-6161,958,462,361,135,0,462,254,81,26,135,data/raw/lizard_images2/Lizard_Images2\dpath_45.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_45.mat
+dpath_46,DigestPath,D20170503802_2019-05-14 11_50_43-lv1-32642-35657-3496-3692,9354,1134,5681,2539,89,1134,4381,1161,50,2539,data/raw/lizard_images2/Lizard_Images2\dpath_46.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_46.mat
+dpath_47,DigestPath,D20170857801_2019-05-14 14_17_15-lv1-30317-22362-4468-4561,2422,854,717,851,68,854,501,34,114,851,data/raw/lizard_images2/Lizard_Images2\dpath_47.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_47.mat
+dpath_48,DigestPath,18-13347A_2019-05-08 01_31_58-lv1-14057-17758-5693-6244,1923,808,716,399,44,808,531,113,28,399,data/raw/lizard_images2/Lizard_Images2\dpath_48.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_48.mat
+dpath_49,DigestPath,2019-06-11 00_17_48-lv1-19548-14335-4905-7390,1613,612,566,435,0,612,501,58,7,435,data/raw/lizard_images2/Lizard_Images2\dpath_49.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_49.mat
+dpath_50,DigestPath,2018_70917_1-1_2019-02-20 23_55_17-lv1-43711-23484-4047-4165,2830,1124,1045,661,199,1124,663,89,94,661,data/raw/lizard_images2/Lizard_Images2\dpath_50.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_50.mat
+dpath_51,DigestPath,2019-06-11 00_36_01-lv1-3257-13245-4175-3523,1741,873,477,391,2,873,319,155,1,391,data/raw/lizard_images2/Lizard_Images2\dpath_51.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_51.mat
+dpath_52,DigestPath,2019-06-04 18_07_26-lv1-29753-27577-3324-3924,886,469,214,203,1,469,91,119,3,203,data/raw/lizard_images2/Lizard_Images2\dpath_52.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_52.mat
+dpath_53,DigestPath,2019-08241-1-1-1_2019-05-29 01_13_54-lv1-36385-6963-3544-4165,1739,968,527,244,0,968,487,38,2,244,data/raw/lizard_images2/Lizard_Images2\dpath_53.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_53.mat
+dpath_54,DigestPath,18-02792B_2019-05-07 22_35_03-lv1-7933-12272-4420-4691,1644,1125,286,233,0,1125,204,81,1,233,data/raw/lizard_images2/Lizard_Images2\dpath_54.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_54.mat
+dpath_55,DigestPath,2018_83253_1-1_2019-02-20 18_38_45-lv1-2951-33576-3045-4336,3484,1430,1560,494,106,1430,1069,364,21,494,data/raw/lizard_images2/Lizard_Images2\dpath_55.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_55.mat
+dpath_56,DigestPath,2019_03867_1-1_2019-02-20 20_00_32-lv1-42426-15525-4353-3558,2245,1497,567,181,0,1497,338,229,0,181,data/raw/lizard_images2/Lizard_Images2\dpath_56.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_56.mat
+dpath_57,DigestPath,D20180187901_2019-05-14 15_56_55-lv1-36171-3307-4967-5736,1507,1008,217,282,2,1008,187,26,2,282,data/raw/lizard_images2/Lizard_Images2\dpath_57.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_57.mat
+dpath_58,DigestPath,18-13347A_2019-05-08 01_31_58-lv1-14057-17758-5693-6244_1,1679,703,703,273,26,703,584,76,17,273,data/raw/lizard_images2/Lizard_Images2\dpath_58.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_58.mat
+dpath_59,DigestPath,18-09926B_2019-05-08 00_13_33-lv1-9910-26446-3879-4218,1774,703,628,443,136,703,379,109,4,443,data/raw/lizard_images2/Lizard_Images2\dpath_59.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_59.mat
+dpath_60,DigestPath,2019-06-10 22_07_12-lv1-18929-19358-3368-3975,1693,576,704,413,2,576,402,285,15,413,data/raw/lizard_images2/Lizard_Images2\dpath_60.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_60.mat
+dpath_61,DigestPath,2019-06-11 00_14_57-lv1-19215-2633-3642-5043,2477,1385,674,418,0,1385,550,106,18,418,data/raw/lizard_images2/Lizard_Images2\dpath_61.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_61.mat
+dpath_62,DigestPath,2018_62532_1-1_2019-02-20 21_54_51-lv1-53445-28477-5625-5981,3670,1983,1350,337,17,1983,1091,191,51,337,data/raw/lizard_images2/Lizard_Images2\dpath_62.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_62.mat
+dpath_63,DigestPath,2018_68099_1-1_2019-02-20 23_21_13-lv1-18019-14672-3129-3364,1903,1241,491,171,1,1241,392,93,5,171,data/raw/lizard_images2/Lizard_Images2\dpath_63.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_63.mat
+dpath_64,DigestPath,D201707227_2019-05-14 13_49_08-lv1-7570-2847-5797-5435,1257,1134,90,33,8,1134,63,15,4,33,data/raw/lizard_images2/Lizard_Images2\dpath_64.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_64.mat
+dpath_65,DigestPath,2018_83253_1-1_2019-02-20 18_38_45-lv1-883-22059-4376-3680,1861,844,823,194,281,844,421,106,15,194,data/raw/lizard_images2/Lizard_Images2\dpath_65.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_65.mat
+dpath_66,DigestPath,18_00991B_2019-05-07 21_27_54-lv1-21230-29833-4835-6374,3011,509,1004,1498,140,509,577,240,47,1498,data/raw/lizard_images2/Lizard_Images2\dpath_66.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_66.mat
+dpath_67,DigestPath,D20180187901_2019-05-14 15_56_55-lv1-34347-8198-3824-5879,1610,698,295,617,2,698,256,36,1,617,data/raw/lizard_images2/Lizard_Images2\dpath_67.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_67.mat
+dpath_68,DigestPath,1901940-1_2019-04-30 10_30_47-lv1-39947-11074-3848-5785,2648,1004,869,775,6,1004,563,272,28,775,data/raw/lizard_images2/Lizard_Images2\dpath_68.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_68.mat
+dpath_69,DigestPath,2019-06-04 17_14_34-lv1-18245-14038-4366-5361,3650,1671,1379,600,6,1671,977,284,112,600,data/raw/lizard_images2/Lizard_Images2\dpath_69.png,data/raw/lizard_labels/Lizard_Labels/Labels\dpath_69.mat
+glas_1,GlaS,testB_10,800,637,108,55,17,637,66,17,8,55,data/raw/lizard_images2/Lizard_Images2\glas_1.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_1.mat
+glas_2,GlaS,train_22,1067,606,277,184,0,606,201,74,2,184,data/raw/lizard_images2/Lizard_Images2\glas_2.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_2.mat
+glas_3,GlaS,train_37,869,665,89,115,8,665,57,16,8,115,data/raw/lizard_images2/Lizard_Images2\glas_3.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_3.mat
+glas_4,GlaS,testA_54,1377,603,532,242,1,603,439,79,13,242,data/raw/lizard_images2/Lizard_Images2\glas_4.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_4.mat
+glas_5,GlaS,testB_11,791,535,63,193,0,535,58,4,1,193,data/raw/lizard_images2/Lizard_Images2\glas_5.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_5.mat
+glas_6,GlaS,testA_56,1096,783,31,282,0,783,27,3,1,282,data/raw/lizard_images2/Lizard_Images2\glas_6.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_6.mat
+glas_7,GlaS,train_20,932,386,304,242,1,386,175,115,13,242,data/raw/lizard_images2/Lizard_Images2\glas_7.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_7.mat
+glas_8,GlaS,testA_57,1065,884,43,138,2,884,38,3,0,138,data/raw/lizard_images2/Lizard_Images2\glas_8.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_8.mat
+glas_9,GlaS,testB_16,893,823,28,42,0,823,25,3,0,42,data/raw/lizard_images2/Lizard_Images2\glas_9.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_9.mat
+glas_10,GlaS,testA_47,813,495,28,290,0,495,28,0,0,290,data/raw/lizard_images2/Lizard_Images2\glas_10.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_10.mat
+glas_11,GlaS,train_9,1039,557,287,195,1,557,188,93,5,195,data/raw/lizard_images2/Lizard_Images2\glas_11.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_11.mat
+glas_12,GlaS,train_8,1839,643,944,252,3,643,872,34,35,252,data/raw/lizard_images2/Lizard_Images2\glas_12.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_12.mat
+glas_13,GlaS,train_19,769,445,248,76,14,445,169,64,1,76,data/raw/lizard_images2/Lizard_Images2\glas_13.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_13.mat
+glas_14,GlaS,train_25,899,363,305,231,0,363,233,64,8,231,data/raw/lizard_images2/Lizard_Images2\glas_14.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_14.mat
+glas_15,GlaS,testB_15,774,600,65,109,1,600,53,10,1,109,data/raw/lizard_images2/Lizard_Images2\glas_15.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_15.mat
+glas_16,GlaS,testA_44,491,330,87,74,0,330,71,11,5,74,data/raw/lizard_images2/Lizard_Images2\glas_16.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_16.mat
+glas_17,GlaS,train_33,1091,603,311,177,1,603,231,78,1,177,data/raw/lizard_images2/Lizard_Images2\glas_17.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_17.mat
+glas_18,GlaS,train_26,413,236,35,142,2,236,26,7,0,142,data/raw/lizard_images2/Lizard_Images2\glas_18.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_18.mat
+glas_19,GlaS,testA_22,779,571,69,139,4,571,61,3,1,139,data/raw/lizard_images2/Lizard_Images2\glas_19.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_19.mat
+glas_20,GlaS,testA_36,1156,553,373,230,1,553,249,117,6,230,data/raw/lizard_images2/Lizard_Images2\glas_20.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_20.mat
+glas_21,GlaS,train_82,1090,805,159,126,0,805,147,11,1,126,data/raw/lizard_images2/Lizard_Images2\glas_21.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_21.mat
+glas_22,GlaS,train_69,1038,651,232,155,0,651,163,69,0,155,data/raw/lizard_images2/Lizard_Images2\glas_22.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_22.mat
+glas_23,GlaS,testA_23,901,594,26,281,0,594,23,0,3,281,data/raw/lizard_images2/Lizard_Images2\glas_23.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_23.mat
+glas_24,GlaS,testA_35,542,360,102,80,0,360,71,20,11,80,data/raw/lizard_images2/Lizard_Images2\glas_24.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_24.mat
+glas_25,GlaS,train_81,667,487,64,116,4,487,55,3,2,116,data/raw/lizard_images2/Lizard_Images2\glas_25.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_25.mat
+glas_26,GlaS,train_57,738,567,35,136,0,567,34,1,0,136,data/raw/lizard_images2/Lizard_Images2\glas_26.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_26.mat
+glas_27,GlaS,testA_34,846,483,45,318,0,483,40,2,3,318,data/raw/lizard_images2/Lizard_Images2\glas_27.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_27.mat
+glas_28,GlaS,testA_8,967,702,78,187,0,702,58,18,2,187,data/raw/lizard_images2/Lizard_Images2\glas_28.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_28.mat
+glas_29,GlaS,train_53,1016,432,370,214,1,432,262,99,8,214,data/raw/lizard_images2/Lizard_Images2\glas_29.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_29.mat
+glas_30,GlaS,train_46,944,347,366,231,1,347,266,94,5,231,data/raw/lizard_images2/Lizard_Images2\glas_30.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_30.mat
+glas_31,GlaS,testA_25,1268,494,510,264,0,494,457,46,7,264,data/raw/lizard_images2/Lizard_Images2\glas_31.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_31.mat
+glas_32,GlaS,testA_19,1121,605,316,200,6,605,210,78,22,200,data/raw/lizard_images2/Lizard_Images2\glas_32.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_32.mat
+glas_33,GlaS,testA_27,1264,532,550,182,0,532,474,70,6,182,data/raw/lizard_images2/Lizard_Images2\glas_33.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_33.mat
+glas_34,GlaS,train_78,656,375,62,219,1,375,49,11,1,219,data/raw/lizard_images2/Lizard_Images2\glas_34.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_34.mat
+glas_35,GlaS,train_79,1000,465,340,195,0,465,217,115,8,195,data/raw/lizard_images2/Lizard_Images2\glas_35.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_35.mat
+glas_36,GlaS,testA_32,728,426,29,273,0,426,28,1,0,273,data/raw/lizard_images2/Lizard_Images2\glas_36.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_36.mat
+glas_37,GlaS,train_74,821,477,122,222,0,477,109,10,3,222,data/raw/lizard_images2/Lizard_Images2\glas_37.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_37.mat
+glas_38,GlaS,train_75,1022,698,275,49,2,698,204,68,1,49,data/raw/lizard_images2/Lizard_Images2\glas_38.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_38.mat
+glas_39,GlaS,testA_16,880,663,25,192,0,663,20,2,3,192,data/raw/lizard_images2/Lizard_Images2\glas_39.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_39.mat
+glas_40,GlaS,testA_28,1387,608,512,267,1,608,471,34,6,267,data/raw/lizard_images2/Lizard_Images2\glas_40.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_40.mat
+glas_41,GlaS,testA_29,693,471,19,203,0,471,17,2,0,203,data/raw/lizard_images2/Lizard_Images2\glas_41.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_41.mat
+glas_42,GlaS,testA_5,840,391,266,183,0,391,183,76,7,183,data/raw/lizard_images2/Lizard_Images2\glas_42.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_42.mat
+glas_43,GlaS,testA_11,591,159,297,135,0,159,222,75,0,135,data/raw/lizard_images2/Lizard_Images2\glas_43.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_43.mat
+glas_44,GlaS,train_72,1018,517,328,173,0,517,236,88,4,173,data/raw/lizard_images2/Lizard_Images2\glas_44.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_44.mat
+glas_45,GlaS,testA_10,1489,620,574,295,3,620,485,66,20,295,data/raw/lizard_images2/Lizard_Images2\glas_45.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_45.mat
+glas_46,GlaS,train_71,900,421,203,276,0,421,185,14,4,276,data/raw/lizard_images2/Lizard_Images2\glas_46.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_46.mat
+glas_47,GlaS,testB_19,741,529,74,138,2,529,64,7,1,138,data/raw/lizard_images2/Lizard_Images2\glas_47.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_47.mat
+glas_48,GlaS,testA_48,1023,839,26,158,0,839,22,3,1,158,data/raw/lizard_images2/Lizard_Images2\glas_48.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_48.mat
+glas_49,GlaS,train_17,979,483,378,118,2,483,251,120,5,118,data/raw/lizard_images2/Lizard_Images2\glas_49.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_49.mat
+glas_50,GlaS,train_7,377,262,23,92,0,262,23,0,0,92,data/raw/lizard_images2/Lizard_Images2\glas_50.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_50.mat
+glas_51,GlaS,testB_18,622,430,82,110,4,430,73,4,1,110,data/raw/lizard_images2/Lizard_Images2\glas_51.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_51.mat
+glas_52,GlaS,train_14,442,83,73,286,1,83,61,6,5,286,data/raw/lizard_images2/Lizard_Images2\glas_52.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_52.mat
+glas_53,GlaS,train_5,868,612,35,221,0,612,33,2,0,221,data/raw/lizard_images2/Lizard_Images2\glas_53.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_53.mat
+glas_54,GlaS,train_4,1187,221,813,153,0,221,586,217,10,153,data/raw/lizard_images2/Lizard_Images2\glas_54.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_54.mat
+glas_55,GlaS,train_11,512,453,16,43,0,453,14,2,0,43,data/raw/lizard_images2/Lizard_Images2\glas_55.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_55.mat
+glas_56,GlaS,train_1,1002,501,166,335,1,501,153,12,0,335,data/raw/lizard_images2/Lizard_Images2\glas_56.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_56.mat
+glas_57,GlaS,testA_59,1093,908,55,130,1,908,47,4,3,130,data/raw/lizard_images2/Lizard_Images2\glas_57.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_57.mat
+glas_58,GlaS,train_12,591,374,153,64,2,374,105,26,20,64,data/raw/lizard_images2/Lizard_Images2\glas_58.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_58.mat
+glas_59,GlaS,testB_2,552,388,13,151,1,388,10,2,0,151,data/raw/lizard_images2/Lizard_Images2\glas_59.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_59.mat
+glas_60,GlaS,train_13,912,696,96,120,1,696,85,10,0,120,data/raw/lizard_images2/Lizard_Images2\glas_60.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_60.mat
+glas_61,GlaS,testA_58,1083,539,353,191,0,539,283,66,4,191,data/raw/lizard_images2/Lizard_Images2\glas_61.png,data/raw/lizard_labels/Lizard_Labels/Labels\glas_61.mat
+crag_1,CRAG,train_105,899,180,43,676,0,180,39,3,1,676,data/raw/lizard_images1/Lizard_Images1\crag_1.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_1.mat
+crag_2,CRAG,test_27,2474,1339,640,495,0,1339,465,167,8,495,data/raw/lizard_images1/Lizard_Images1\crag_2.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_2.mat
+crag_3,CRAG,train_66,4168,2734,216,1218,3,2734,195,16,2,1218,data/raw/lizard_images1/Lizard_Images1\crag_3.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_3.mat
+crag_4,CRAG,train_119,3210,2899,90,221,3,2899,69,16,2,221,data/raw/lizard_images1/Lizard_Images1\crag_4.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_4.mat
+crag_5,CRAG,test_18,1408,748,27,633,0,748,22,5,0,633,data/raw/lizard_images1/Lizard_Images1\crag_5.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_5.mat
+crag_6,CRAG,test_20,1720,1181,157,382,37,1181,89,28,3,382,data/raw/lizard_images1/Lizard_Images1\crag_6.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_6.mat
+crag_7,CRAG,train_46,3198,1764,758,676,10,1764,300,433,15,676,data/raw/lizard_images1/Lizard_Images1\crag_7.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_7.mat
+crag_8,CRAG,test_7,1454,826,93,535,0,826,73,18,2,535,data/raw/lizard_images1/Lizard_Images1\crag_8.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_8.mat
+crag_9,CRAG,train_97,4085,2216,1151,718,2,2216,883,260,6,718,data/raw/lizard_images1/Lizard_Images1\crag_9.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_9.mat
+crag_10,CRAG,test_5,2350,1790,112,448,3,1790,90,18,1,448,data/raw/lizard_images1/Lizard_Images1\crag_10.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_10.mat
+crag_11,CRAG,train_27,3479,2057,870,552,3,2057,522,322,23,552,data/raw/lizard_images1/Lizard_Images1\crag_11.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_11.mat
+crag_12,CRAG,test_21,3281,1127,776,1378,7,1127,583,183,3,1378,data/raw/lizard_images1/Lizard_Images1\crag_12.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_12.mat
+crag_13,CRAG,train_3,1590,1228,40,322,18,1228,16,6,0,322,data/raw/lizard_images1/Lizard_Images1\crag_13.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_13.mat
+crag_14,CRAG,train_61,4839,1364,1875,1600,7,1364,1079,700,89,1600,data/raw/lizard_images1/Lizard_Images1\crag_14.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_14.mat
+crag_15,CRAG,train_21,7174,2236,4194,744,83,2236,3706,322,83,744,data/raw/lizard_images1/Lizard_Images1\crag_15.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_15.mat
+crag_16,CRAG,train_113,2166,1335,419,412,189,1335,197,23,10,412,data/raw/lizard_images1/Lizard_Images1\crag_16.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_16.mat
+crag_17,CRAG,train_151,2029,460,460,1109,16,460,224,178,42,1109,data/raw/lizard_images1/Lizard_Images1\crag_17.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_17.mat
+crag_18,CRAG,test_16,3557,2981,268,308,2,2981,215,50,1,308,data/raw/lizard_images1/Lizard_Images1\crag_18.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_18.mat
+crag_19,CRAG,train_95,2982,1246,990,746,2,1246,541,378,69,746,data/raw/lizard_images1/Lizard_Images1\crag_19.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_19.mat
+crag_20,CRAG,train_92,4467,2379,1018,1070,3,2379,692,269,54,1070,data/raw/lizard_images1/Lizard_Images1\crag_20.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_20.mat
+crag_21,CRAG,test_2,4362,1674,1656,1032,4,1674,1328,315,9,1032,data/raw/lizard_images1/Lizard_Images1\crag_21.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_21.mat
+crag_22,CRAG,test_32,2251,1708,242,301,47,1708,172,20,3,301,data/raw/lizard_images1/Lizard_Images1\crag_22.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_22.mat
+crag_23,CRAG,test_6,2673,2022,359,292,25,2022,283,48,3,292,data/raw/lizard_images1/Lizard_Images1\crag_23.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_23.mat
+crag_24,CRAG,test_8,1798,883,416,499,291,883,95,7,23,499,data/raw/lizard_images1/Lizard_Images1\crag_24.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_24.mat
+crag_25,CRAG,train_9,651,542,21,88,0,542,20,1,0,88,data/raw/lizard_images1/Lizard_Images1\crag_25.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_25.mat
+crag_26,CRAG,train_166,4317,2317,769,1231,0,2317,560,166,43,1231,data/raw/lizard_images1/Lizard_Images1\crag_26.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_26.mat
+crag_27,CRAG,train_89,2231,592,605,1034,3,592,268,325,9,1034,data/raw/lizard_images1/Lizard_Images1\crag_27.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_27.mat
+crag_28,CRAG,train_111,942,485,24,433,0,485,18,6,0,433,data/raw/lizard_images1/Lizard_Images1\crag_28.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_28.mat
+crag_29,CRAG,test_40,3001,1601,327,1073,6,1601,295,24,2,1073,data/raw/lizard_images1/Lizard_Images1\crag_29.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_29.mat
+crag_30,CRAG,test_34,3934,2326,1048,560,13,2326,510,522,3,560,data/raw/lizard_images1/Lizard_Images1\crag_30.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_30.mat
+crag_31,CRAG,train_39,2971,1218,253,1500,9,1218,201,30,13,1500,data/raw/lizard_images1/Lizard_Images1\crag_31.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_31.mat
+crag_32,CRAG,train_28,4735,2168,1491,1076,9,2168,1067,317,98,1076,data/raw/lizard_images1/Lizard_Images1\crag_32.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_32.mat
+crag_33,CRAG,test_4,3171,2533,110,528,2,2533,96,11,1,528,data/raw/lizard_images1/Lizard_Images1\crag_33.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_33.mat
+crag_34,CRAG,test_10,1342,649,442,251,2,649,267,150,23,251,data/raw/lizard_images1/Lizard_Images1\crag_34.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_34.mat
+crag_35,CRAG,train_74,3378,1933,672,773,131,1933,411,126,4,773,data/raw/lizard_images1/Lizard_Images1\crag_35.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_35.mat
+crag_36,CRAG,train_142,1092,564,149,379,38,564,94,17,0,379,data/raw/lizard_images1/Lizard_Images1\crag_36.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_36.mat
+crag_37,CRAG,test_23,3362,2672,120,570,5,2672,107,8,0,570,data/raw/lizard_images1/Lizard_Images1\crag_37.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_37.mat
+crag_38,CRAG,train_1,1948,950,319,679,38,950,253,26,2,679,data/raw/lizard_images1/Lizard_Images1\crag_38.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_38.mat
+crag_39,CRAG,train_165,4637,285,2165,2187,8,285,1746,326,85,2187,data/raw/lizard_images1/Lizard_Images1\crag_39.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_39.mat
+crag_40,CRAG,train_44,1986,502,67,1417,1,502,54,12,0,1417,data/raw/lizard_images1/Lizard_Images1\crag_40.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_40.mat
+crag_41,CRAG,train_2,3093,2531,90,472,4,2531,75,11,0,472,data/raw/lizard_images1/Lizard_Images1\crag_41.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_41.mat
+crag_42,CRAG,train_11,1098,375,84,639,7,375,67,8,2,639,data/raw/lizard_images1/Lizard_Images1\crag_42.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_42.mat
+crag_43,CRAG,test_1,789,585,30,174,0,585,26,4,0,174,data/raw/lizard_images1/Lizard_Images1\crag_43.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_43.mat
+crag_44,CRAG,test_30,2451,1374,305,772,79,1374,167,56,3,772,data/raw/lizard_images1/Lizard_Images1\crag_44.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_44.mat
+crag_45,CRAG,train_4,2335,1126,201,1008,5,1126,181,15,0,1008,data/raw/lizard_images1/Lizard_Images1\crag_45.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_45.mat
+crag_46,CRAG,train_163,5169,2135,1585,1449,333,2135,934,307,11,1449,data/raw/lizard_images1/Lizard_Images1\crag_46.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_46.mat
+crag_47,CRAG,train_87,7283,2257,3723,1303,7,2257,2590,1010,116,1303,data/raw/lizard_images1/Lizard_Images1\crag_47.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_47.mat
+crag_48,CRAG,test_15,2206,844,389,973,53,844,291,40,5,973,data/raw/lizard_images1/Lizard_Images1\crag_48.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_48.mat
+crag_49,CRAG,train_124,4470,1432,1177,1861,12,1432,1025,136,4,1861,data/raw/lizard_images1/Lizard_Images1\crag_49.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_49.mat
+crag_50,CRAG,train_149,1731,1538,53,140,4,1538,46,3,0,140,data/raw/lizard_images1/Lizard_Images1\crag_50.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_50.mat
+crag_51,CRAG,train_18,2162,1122,281,759,13,1122,250,15,3,759,data/raw/lizard_images1/Lizard_Images1\crag_51.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_51.mat
+crag_52,CRAG,test_19,1873,615,274,984,7,615,112,134,21,984,data/raw/lizard_images1/Lizard_Images1\crag_52.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_52.mat
+crag_53,CRAG,test_17,4649,2907,351,1391,23,2907,267,49,12,1391,data/raw/lizard_images1/Lizard_Images1\crag_53.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_53.mat
+crag_54,CRAG,train_35,646,563,15,68,0,563,13,2,0,68,data/raw/lizard_images1/Lizard_Images1\crag_54.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_54.mat
+crag_55,CRAG,test_31,3012,1765,604,643,9,1765,211,377,7,643,data/raw/lizard_images1/Lizard_Images1\crag_55.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_55.mat
+crag_56,CRAG,train_22,3412,1648,1190,574,3,1648,926,225,36,574,data/raw/lizard_images1/Lizard_Images1\crag_56.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_56.mat
+crag_57,CRAG,train_49,5948,5316,98,534,2,5316,85,11,0,534,data/raw/lizard_images1/Lizard_Images1\crag_57.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_57.mat
+crag_58,CRAG,train_64,1041,508,71,462,6,508,39,25,1,462,data/raw/lizard_images1/Lizard_Images1\crag_58.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_58.mat
+crag_59,CRAG,train_132,4223,3462,137,624,3,3462,130,3,1,624,data/raw/lizard_images1/Lizard_Images1\crag_59.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_59.mat
+crag_60,CRAG,train_135,6243,1987,2731,1525,13,1987,1620,858,240,1525,data/raw/lizard_images1/Lizard_Images1\crag_60.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_60.mat
+crag_61,CRAG,train_81,3272,2642,100,530,37,2642,59,1,3,530,data/raw/lizard_images1/Lizard_Images1\crag_61.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_61.mat
+crag_62,CRAG,test_24,3099,1717,216,1166,4,1717,164,36,12,1166,data/raw/lizard_images1/Lizard_Images1\crag_62.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_62.mat
+crag_63,CRAG,test_22,1342,400,284,658,8,400,120,137,19,658,data/raw/lizard_images1/Lizard_Images1\crag_63.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_63.mat
+crag_64,CRAG,train_30,2184,561,484,1139,21,561,391,48,24,1139,data/raw/lizard_images1/Lizard_Images1\crag_64.png,data/raw/lizard_labels/Lizard_Labels/Labels\crag_64.mat

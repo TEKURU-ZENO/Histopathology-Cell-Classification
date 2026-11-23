@@ -1,0 +1,143 @@
+{
+  "timestamp_utc": "2026-11-22T18:45:45.594046+00:00",
+  "status": "LOCKED_BEFORE_TEST_EVALUATION",
+  "chosen_hyperparameters": {
+    "lr": 0.001,
+    "lambda": 0.1,
+    "k": 6
+  },
+  "best_validation_macro_f1": 0.66146044857876,
+  "all_grid_results": [
+    {
+      "lr": 0.001,
+      "lambda": 0.1,
+      "k": 6,
+      "val_macro_f1": 0.66146044857876
+    },
+    {
+      "lr": 0.001,
+      "lambda": 0.1,
+      "k": 8,
+      "val_macro_f1": 0.6574621539285125
+    },
+    {
+      "lr": 0.001,
+      "lambda": 0.1,
+      "k": 12,
+      "val_macro_f1": 0.6542615996286382
+    },
+    {
+      "lr": 0.001,
+      "lambda": 0.5,
+      "k": 6,
+      "val_macro_f1": 0.6428591313286952
+    },
+    {
+      "lr": 0.001,
+      "lambda": 0.5,
+      "k": 8,
+      "val_macro_f1": 0.6398646713533359
+    },
+    {
+      "lr": 0.001,
+      "lambda": 0.5,
+      "k": 12,
+      "val_macro_f1": 0.6338619719677178
+    },
+    {
+      "lr": 0.001,
+      "lambda": 1.0,
+      "k": 6,
+      "val_macro_f1": 0.6327426659880571
+    },
+    {
+      "lr": 0.001,
+      "lambda": 1.0,
+      "k": 8,
+      "val_macro_f1": 0.6289084727700658
+    },
+    {
+      "lr": 0.001,
+      "lambda": 1.0,
+      "k": 12,
+      "val_macro_f1": 0.6224850502299621
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 0.1,
+      "k": 6,
+      "val_macro_f1": 0.6077771334191601
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 0.1,
+      "k": 8,
+      "val_macro_f1": 0.6039492926761214
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 0.1,
+      "k": 12,
+      "val_macro_f1": 0.5978340495307584
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 0.5,
+      "k": 6,
+      "val_macro_f1": 0.5991287950743819
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 0.5,
+      "k": 8,
+      "val_macro_f1": 0.5941913615945501
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 0.5,
+      "k": 12,
+      "val_macro_f1": 0.5888542574364339
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 1.0,
+      "k": 6,
+      "val_macro_f1": 0.5877967578750637
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 1.0,
+      "k": 8,
+      "val_macro_f1": 0.5837193694197441
+    },
+    {
+      "lr": 0.0003,
+      "lambda": 1.0,
+      "k": 12,
+      "val_macro_f1": 0.57697269279371
+    }
+  ],
+  "model_parameters": {
+    "M1_ResNet18": 11178051,
+    "M2_M3_MLP": 66051,
+    "M4_M5_GATv2": 70403,
+    "M4_M5_SAGE": 69827
+  },
+  "feature_extraction": {
+    "backbone": "ResNet-18 (ImageNet pretrained, frozen, FP16)",
+    "embedding_dim": 512,
+    "crop_size": "41x41 pixels at 20x",
+    "resize_choice": "Bilinear interpolation to 224x224 with ImageNet normalization"
+  },
+  "graph_construction": {
+    "k": 6,
+    "symmetrization": "undirected (E_sym = E union E_T)",
+    "edge_features": "3-dim [distance, dx, dy]",
+    "self_loops": "fill_value=mean"
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}
