@@ -38,43 +38,43 @@ Statistical hypothesis testing was conducted at the **slide/region unit of analy
 | Hypothesis | Comparison | Metric | Observed Diff | Holm $p$-value | 95% BCa Bootstrap CI | Equivalence Margin ($\pm 0.015$) | Verdict |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **H1: Spatial Inductive Bias** | M4 (GATv2) vs M2 (MLP) | Clean In-Domain Macro-F1 | $-0.0313$ | $p = 3.43 \times 10^{-6}$ | $[-0.0403, -0.0222]$ | Outside margin (inferior) | **REJECTED** |
-| **H2: Stain Robustness** | M5 (GATv2+KL) vs M3 (MLP+KL) | $\Delta\text{F1}$ under Macenko Moderate Shift | $-0.0057$ | $p = 0.5304$ | $[-0.0140, +0.0020]$ | **Entirely inside $[-0.015, +0.015]$** | **EQUIVALENT** |
-| **H3: Calibration & Consistency** | M5 (GATv2+KL) vs M3 (MLP+KL) | ECE (10-bin) under Stain Shift | $+0.0025$ | $p = 0.5362$ | $[-0.0027, +0.0090]$ | ECE preserved ($\le 0.021$) | **SUPPORTED (CALIBRATION PRESERVED)** |
+| **H2: Stain Robustness** | M5 (GATv2+KL) vs M3 (MLP+KL) | $\Delta\text{F1}$ under Macenko Moderate Shift | $-0.0057$ | $p = 0.8630$ | $[-0.0140, +0.0020]$ | Inside margin; M5 does not improve | **REJECTED** |
+| **H3: Calibration & Consistency** | M5 (GATv2+KL) vs M3 (MLP+KL) | ECE under Stain Shift | $+0.0025$ | $p = 0.5362$ | $[-0.0027, +0.0090]$ | Contingent on H2 | **NOT TESTABLE** |
 
 ### Scientific Findings:
-1. **H1 is Rejected for GATv2, but Supported for GraphSAGE**: Parameterized attention heads over frozen ImageNet features underperform isolated MLPs ($0.704$ vs $0.705$). However, uniform mean neighborhood smoothing (GraphSAGE ablation) achieves **$0.728 \pm 0.013$** ($+0.023$ F1 gain over M2), proving that non-parametric spatial context benefits nuclear phenotyping.
-2. **H2 is Statistically Equivalent**: The 95% BCa interval for degradation difference between M5 and M3 is $[-0.0140, +0.0020]$, falling strictly within the pre-registered equivalence margin $\pm 0.015$. Spatial consistency yields equivalent robustness without inducing spatial error propagation under domain shift.
-3. **Spatial Error Clustering ($C_{err}$)**: Observed join-count spatial error clustering significantly exceeds the random permutation null across all models ($p < 0.001$), demonstrating that classification errors physically cluster along stromal-epithelial tissue boundaries.
+1. **H1 is Rejected for GATv2**: Parameterized attention heads over frozen ImageNet features underperform isolated MLPs on clean data ($-0.0313$ paired difference, $p < 0.001$). However, uniform mean neighborhood smoothing (GraphSAGE ablation) achieves higher F1 ($0.675$ vs $0.649$ over the 29 test regions), indicating that local averaging behaves differently from learned attention on unadapted representations.
+2. **H2 is Rejected**: Across all stain shift conditions (Macenko moderate, Macenko strong, RandStainNA, and unseen CoNSeP), M5 does not degrade significantly less than M3 or M2. Under the pre-registered decision rule, H2 is rejected.
+3. **H3 is Not Testable**: Because M5 does not outperform M3 on robustness, the secondary calibration hypothesis is rendered not testable under the pre-registered testing hierarchy. Observed join-count error clustering $C_{\text{err}}$ remains elevated relative to spatial null permutations.
 
 ---
 
 ## Robustness & Calibration Tables
 
 ### Table 4: Robustness Across Stain Shifts
-*Values report mean $\pm$ seed standard deviation across 3 seeds (42, 43, 44), followed by the [95% BCa bootstrap confidence interval].*
+*Values report region-level Macro-F1 (mean $\pm$ standard deviation across 29 Lizard regions and 14 CoNSeP tiles, averaged across 3 seeds per region), followed by the [95% BCa bootstrap confidence interval].*
 
 | Model Architecture | In-Domain Clean F1 | $\Delta\text{F1}$ Macenko (Moderate, $\pm 20\%$) | $\Delta\text{F1}$ RandStainNA | Unseen External CoNSeP F1 | Params |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **M1: ResNet-18** *(full fine-tune)* | $0.893 \pm 0.005$ $[0.887, 0.897]$ | $0.060 \pm 0.017$ $[0.037, 0.078]$ | $0.229 \pm 0.019$ $[0.211, 0.244]$ | $0.818 \pm 0.013$ $[0.800, 0.826]$ | $11.18\text{M}$ |
-| **M2: MLP** *(RandStainNA, CE)* | $0.705 \pm 0.004$ $[0.701, 0.708]$ | $0.007 \pm 0.003$ $[0.004, 0.009]$ | $0.046 \pm 0.002$ $[0.043, 0.047]$ | $0.670 \pm 0.004$ $[0.664, 0.673]$ | $66.05\text{k}$ |
-| **M3: MLP** *(Consistency, CE+KL)* | $0.709 \pm 0.002$ $[0.708, 0.710]$ | $0.009 \pm 0.002$ $[0.007, 0.010]$ | $0.079 \pm 0.008$ $[0.071, 0.086]$ | $0.670 \pm 0.002$ $[0.668, 0.671]$ | $66.05\text{k}$ |
-| **M4: GATv2** *(RandStainNA, CE)* | $0.704 \pm 0.003$ $[0.699, 0.707]$ | $0.008 \pm 0.005$ $[0.000, 0.011]$ | $0.038 \pm 0.003$ $[0.033, 0.040]$ | $0.671 \pm 0.007$ $[0.661, 0.676]$ | $70.40\text{k}$ |
-| **M5: GATv2** *(Proposed, CE+KL)* | $0.701 \pm 0.005$ $[0.695, 0.706]$ | $0.011 \pm 0.004$ $[0.007, 0.014]$ | $0.067 \pm 0.010$ $[0.059, 0.082]$ | $0.669 \pm 0.004$ $[0.664, 0.672]$ | $70.40\text{k}$ |
-| *M4-SAGE: GraphSAGE (Ablation, CE)* | $0.728 \pm 0.013$ $[0.714, 0.738]$ | $0.009 \pm 0.004$ $[0.003, 0.011]$ | $0.031 \pm 0.002$ $[0.030, 0.033]$ | $0.690 \pm 0.013$ $[0.677, 0.709]$ | $69.83\text{k}$ |
-| *M5-SAGE: GraphSAGE (Ablation, CE+KL)* | $0.727 \pm 0.008$ $[0.719, 0.737]$ | $0.015 \pm 0.004$ $[0.010, 0.018]$ | $0.065 \pm 0.008$ $[0.056, 0.072]$ | $0.684 \pm 0.009$ $[0.672, 0.692]$ | $69.83\text{k}$ |
+| **M1: ResNet-18** *(full fine-tune)* | $0.879 \pm 0.047$ $[0.859, 0.893]$ | $0.058 \pm 0.080$ $[0.035, 0.097]$ | $0.266 \pm 0.220$ $[0.187, 0.351]$ | $0.654 \pm 0.131$ $[0.591, 0.725]$ | $11.18\text{M}$ |
+| **M2: MLP** *(RandStainNA, CE)* | $0.649 \pm 0.050$ $[0.631, 0.666]$ | $0.009 \pm 0.029$ $[-0.001, 0.019]$ | $0.031 \pm 0.071$ $[0.004, 0.059]$ | $0.503 \pm 0.124$ $[0.429, 0.557]$ | $66.05\text{k}$ |
+| **M3: MLP** *(Consistency, CE+KL)* | $0.657 \pm 0.052$ $[0.638, 0.676]$ | $0.013 \pm 0.033$ $[0.001, 0.023]$ | $0.069 \pm 0.095$ $[0.036, 0.111]$ | $0.511 \pm 0.118$ $[0.439, 0.561]$ | $66.05\text{k}$ |
+| **M4: GATv2** *(RandStainNA, CE)* | $0.617 \pm 0.052$ $[0.598, 0.637]$ | $0.012 \pm 0.028$ $[0.003, 0.024]$ | $0.030 \pm 0.067$ $[0.007, 0.057]$ | $0.483 \pm 0.137$ $[0.405, 0.541]$ | $70.40\text{k}$ |
+| **M5: GATv2** *(Proposed, CE+KL)* | $0.619 \pm 0.056$ $[0.598, 0.640]$ | $0.018 \pm 0.037$ $[0.005, 0.033]$ | $0.061 \pm 0.104$ $[0.025, 0.107]$ | $0.492 \pm 0.139$ $[0.413, 0.552]$ | $70.40\text{k}$ |
+| *M4-SAGE: GraphSAGE (Ablation, CE)* | $0.675 \pm 0.046$ $[0.657, 0.691]$ | $0.014 \pm 0.030$ $[0.003, 0.026]$ | $0.030 \pm 0.070$ $[0.008, 0.059]$ | $0.523 \pm 0.118$ $[0.454, 0.573]$ | $69.83\text{k}$ |
+| *M5-SAGE: GraphSAGE (Ablation, CE+KL)* | $0.675 \pm 0.050$ $[0.657, 0.692]$ | $0.021 \pm 0.040$ $[0.006, 0.035]$ | $0.061 \pm 0.091$ $[0.030, 0.103]$ | $0.527 \pm 0.112$ $[0.455, 0.571]$ | $69.83\text{k}$ |
 
 ### Table 5: Calibration & Spatial Error Structure
-*Evaluated on Lizard in-domain test set. ECE is computed across 10 bins. $A_{cons}$ and CER quantify cross-perturbation agreement. $C_{err}$ reports observed join-count error clustering vs. 1,000 spatial permutations.*
+*Evaluated on Lizard in-domain test set across clean and RandStainNA conditions. ECE is computed across 10 bins. $A_{cons}$ and CER quantify cross-perturbation agreement. $C_{err}$ reports observed join-count error clustering vs. 1,000 spatial permutations with exact empirical $p$-values across all 29 regions.*
 
-| Model Architecture | 10-bin ECE ($\downarrow$) | Brier Score ($\downarrow$) | $A_{cons}$ ($\uparrow$) | Consistent Error Rate (CER $\downarrow$) | $C_{err}$ (Observed vs Null) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **M1: ResNet-18** *(full fine-tune)* | $0.0891 \pm 0.0679$ | $0.2781 \pm 0.1360$ | $0.878 \pm 0.011$ | $0.061 \pm 0.002$ | $0.068\text{ vs }0.047$ ($p < 0.001$) |
-| **M2: MLP** *(RandStainNA, CE)* | $0.0146 \pm 0.0065$ | $0.3721 \pm 0.0226$ | $0.898 \pm 0.003$ | $0.202 \pm 0.004$ | $0.106\text{ vs }0.078$ ($p < 0.001$) |
-| **M3: MLP** *(Consistency, CE+KL)* | $0.0234 \pm 0.0136$ | $0.3775 \pm 0.0389$ | $0.884 \pm 0.003$ | $0.188 \pm 0.001$ | $0.109\text{ vs }0.082$ ($p < 0.001$) |
-| **M4: GATv2** *(RandStainNA, CE)* | $0.0158 \pm 0.0073$ | $0.3686 \pm 0.0198$ | $0.916 \pm 0.004$ | $0.211 \pm 0.004$ | $0.122\text{ vs }0.084$ ($p < 0.001$) |
-| **M5: GATv2** *(Proposed, CE+KL)* | $0.0203 \pm 0.0080$ | $0.3765 \pm 0.0323$ | $0.898 \pm 0.003$ | $0.198 \pm 0.002$ | $0.130\text{ vs }0.092$ ($p < 0.001$) |
-| *M4-SAGE: GraphSAGE (Ablation, CE)* | $0.0121 \pm 0.0056$ | $0.3452 \pm 0.0189$ | $0.903 \pm 0.006$ | $0.187 \pm 0.006$ | $0.102\text{ vs }0.071$ ($p < 0.001$) |
-| *M5-SAGE: GraphSAGE (Ablation, CE+KL)* | $0.0137 \pm 0.0072$ | $0.3548 \pm 0.0331$ | $0.888 \pm 0.004$ | $0.178 \pm 0.003$ | $0.108\text{ vs }0.077$ ($p < 0.001$) |
+| Model Architecture | ECE Clean (10-bin) | ECE RandStainNA | Brier Clean | Brier RandStainNA | $A_{cons}$ (RandStainNA) | CER (RandStainNA) | $C_{err}$ (Obs vs Null, $p$-val) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **M1: ResNet-18** *(full fine-tune)* | $0.0258 \pm 0.0017$ | $0.2148 \pm 0.0118$ | $0.1477 \pm 0.0068$ | $0.5297 \pm 0.0212$ | $0.677 \pm 0.013$ | $0.048 \pm 0.002$ | $0.0200\text{ vs }0.0106$ ($p = 0.0230$) |
+| **M2: MLP** *(RandStainNA, CE)* | $0.0174 \pm 0.0100$ | $0.0148 \pm 0.0027$ | $0.3526 \pm 0.0065$ | $0.4128 \pm 0.0072$ | $0.798 \pm 0.008$ | $0.168 \pm 0.002$ | $0.0864\text{ vs }0.0623$ ($p < 0.001$) |
+| **M3: MLP** *(Consistency, CE+KL)* | $0.0187 \pm 0.0117$ | $0.0433 \pm 0.0096$ | $0.3442 \pm 0.0025$ | $0.4501 \pm 0.0103$ | $0.734 \pm 0.012$ | $0.148 \pm 0.001$ | $0.0838\text{ vs }0.0609$ ($p < 0.001$) |
+| **M4: GATv2** *(RandStainNA, CE)* | $0.0190 \pm 0.0101$ | $0.0147 \pm 0.0057$ | $0.3516 \pm 0.0077$ | $0.4019 \pm 0.0075$ | $0.833 \pm 0.008$ | $0.181 \pm 0.001$ | $0.0985\text{ vs }0.0647$ ($p < 0.001$) |
+| **M5: GATv2** *(Proposed, CE+KL)* | $0.0207 \pm 0.0116$ | $0.0202 \pm 0.0106$ | $0.3455 \pm 0.0033$ | $0.4325 \pm 0.0107$ | $0.772 \pm 0.021$ | $0.162 \pm 0.005$ | $0.0960\text{ vs }0.0644$ ($p < 0.001$) |
+| *M4-SAGE: GraphSAGE (Ablation, CE)* | $0.0105 \pm 0.0052$ | $0.0116 \pm 0.0046$ | $0.3279 \pm 0.0099$ | $0.3712 \pm 0.0107$ | $0.849 \pm 0.006$ | $0.169 \pm 0.003$ | $0.0814\text{ vs }0.0546$ ($p < 0.001$) |
+| *M5-SAGE: GraphSAGE (Ablation, CE+KL)* | $0.0184 \pm 0.0041$ | $0.0169 \pm 0.0108$ | $0.3230 \pm 0.0066$ | $0.4100 \pm 0.0149$ | $0.789 \pm 0.011$ | $0.153 \pm 0.005$ | $0.0802\text{ vs }0.0546$ ($p < 0.001$) |
 
 ---
 

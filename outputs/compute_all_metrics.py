@@ -92,19 +92,23 @@ def compute_metrics_for_all_runs(pred_dir='outputs/predictions', h5_path='data/p
             a_cons, cer = compute_consistency_metrics(clean_preds, preds, targets)
 
             # Spatial error clustering Cerr on graph (for clean and perturbed)
-            # Compute over first few tiles to sample Cerr
-            c_err_obs_list, c_err_null_list = [], []
-            for t in unique_tiles[:10]: # sample representative tiles
+            # Compute over all tiles with 1,000 shuffles and empirical p-value
+            c_err_obs_list, c_err_null_list, c_err_pval_list = [], [], []
+            slide_cerr_dict = {}
+            for t in unique_tiles:
                 mask = (tile_ids == t)
                 edge_idx = graph_cache.get((dset, t))
                 if edge_idx is not None:
                     tile_errors = (preds[mask] != targets[mask])
-                    null_res = compute_c_err_with_null(edge_idx, tile_errors, n_shuffles=200, seed=42)
+                    null_res = compute_c_err_with_null(edge_idx, tile_errors, n_shuffles=1000, seed=42)
                     c_err_obs_list.append(null_res['c_err_obs'])
                     c_err_null_list.append(null_res['c_err_null_mean'])
+                    c_err_pval_list.append(null_res['p_value'])
+                    slide_cerr_dict[t] = null_res
 
             avg_cerr_obs = float(np.mean(c_err_obs_list)) if c_err_obs_list else 0.0
             avg_cerr_null = float(np.mean(c_err_null_list)) if c_err_null_list else 0.0
+            avg_cerr_pval = float(np.mean(c_err_pval_list)) if c_err_pval_list else 1.0
 
             # Slide-level scores for statistical tests
             slide_f1_dict = {}
@@ -135,10 +139,12 @@ def compute_metrics_for_all_runs(pred_dir='outputs/predictions', h5_path='data/p
                 'cer': cer,
                 'c_err_obs': avg_cerr_obs,
                 'c_err_null': avg_cerr_null,
+                'c_err_pval': avg_cerr_pval,
                 'slide_f1s': slide_f1_dict,
                 'slide_delta_f1s': slide_delta_f1_dict,
                 'slide_eces': slide_ece_dict,
-                'slide_briers': slide_brier_dict
+                'slide_briers': slide_brier_dict,
+                'slide_cerrs': slide_cerr_dict
             })
 
     df_res = pd.DataFrame(results)

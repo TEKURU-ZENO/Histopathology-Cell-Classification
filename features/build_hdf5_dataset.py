@@ -136,8 +136,15 @@ def build_hdf5():
             reg_grp.create_dataset('labels', data=labels, compression='gzip')
             
             e_idx_8, e_attr_8 = build_spatial_knn_graph(centroids, k=8)
+            e_idx_6, e_attr_6 = build_spatial_knn_graph(centroids, k=6)
+            e_idx_12, e_attr_12 = build_spatial_knn_graph(centroids, k=12)
+            
             reg_grp.create_dataset('edge_index_k8', data=e_idx_8.numpy(), compression='gzip')
             reg_grp.create_dataset('edge_attr_k8', data=e_attr_8.numpy(), compression='gzip')
+            reg_grp.create_dataset('edge_index_k6', data=e_idx_6.numpy(), compression='gzip')
+            reg_grp.create_dataset('edge_attr_k6', data=e_attr_6.numpy(), compression='gzip')
+            reg_grp.create_dataset('edge_index_k12', data=e_idx_12.numpy(), compression='gzip')
+            reg_grp.create_dataset('edge_attr_k12', data=e_attr_12.numpy(), compression='gzip')
             
             # Embeddings for clean + 4 test perturbation conditions
             for cond in ['clean', 'macenko_mild', 'macenko_moderate', 'macenko_strong', 'randstainna']:
@@ -165,8 +172,15 @@ def build_hdf5():
             reg_grp.create_dataset('labels', data=labels, compression='gzip')
             
             e_idx_8, e_attr_8 = build_spatial_knn_graph(centroids, k=8)
+            e_idx_6, e_attr_6 = build_spatial_knn_graph(centroids, k=6)
+            e_idx_12, e_attr_12 = build_spatial_knn_graph(centroids, k=12)
+            
             reg_grp.create_dataset('edge_index_k8', data=e_idx_8.numpy(), compression='gzip')
             reg_grp.create_dataset('edge_attr_k8', data=e_attr_8.numpy(), compression='gzip')
+            reg_grp.create_dataset('edge_index_k6', data=e_idx_6.numpy(), compression='gzip')
+            reg_grp.create_dataset('edge_attr_k6', data=e_attr_6.numpy(), compression='gzip')
+            reg_grp.create_dataset('edge_index_k12', data=e_idx_12.numpy(), compression='gzip')
+            reg_grp.create_dataset('edge_attr_k12', data=e_attr_12.numpy(), compression='gzip')
             
             for cond in ['clean', 'macenko_mild', 'macenko_moderate', 'macenko_strong', 'randstainna']:
                 img_path = os.path.join(perturbed_test_dir, f"consep_{tile_name}_{cond}.png")

@@ -1,6 +1,6 @@
 {
   "H1_Spatial_Bias": {
-    "comparison": "M4 vs M2 (Clean in-domain Macro-F1)",
+    "comparison": "M4 vs M2 (Clean in-domain Macro-F1 across 29 Lizard regions)",
     "paired_diff_mean": -0.03132545241494255,
     "wilcoxon_raw_p": 1.1436641216278076e-06,
     "wilcoxon_holm_p": 3.430992364883423e-06,
@@ -12,26 +12,104 @@
     "verdict": "REJECTED"
   },
   "H2_Stain_Robustness": {
-    "comparison": "M5 vs M3 and M2 (Delta-F1 under Macenko & RandStainNA)",
-    "paired_diff_mean": -0.0056603890758620675,
-    "wilcoxon_raw_p": 0.2652079239487648,
-    "wilcoxon_holm_p": 0.5304158478975296,
-    "bca_95_ci": [
-      -0.014024058374874174,
-      0.001988242374015491
-    ],
-    "inside_equivalence_margin_0.015": true,
-    "verdict": "EQUIVALENT"
+    "verdict": "REJECTED",
+    "rule": "Rejected unless M5 degrades significantly less than M3/M2",
+    "primary_comparison": "M5 vs M3 (Macenko mod \u0394F1)",
+    "primary_diff_mean": -0.0056603890758620675,
+    "primary_holm_p": 0.5304158478975296,
+    "all_comparisons": {
+      "M5 vs M3 (Macenko mod \u0394F1)": {
+        "paired_diff_mean": -0.0056603890758620675,
+        "wilcoxon_raw_p": 0.2652079239487648,
+        "bca_95_ci": [
+          -0.014024058374874174,
+          0.001988242374015491
+        ],
+        "inside_equivalence_margin_0.015": true,
+        "wilcoxon_holm_p": 0.863037109375
+      },
+      "M5 vs M3 (Macenko strong \u0394F1)": {
+        "paired_diff_mean": -0.004255917421839081,
+        "wilcoxon_raw_p": 0.31448761001229286,
+        "bca_95_ci": [
+          -0.011887811148910238,
+          0.002703027318534534
+        ],
+        "inside_equivalence_margin_0.015": true,
+        "wilcoxon_holm_p": 0.863037109375
+      },
+      "M5 vs M3 (RandStainNA \u0394F1)": {
+        "paired_diff_mean": 0.008161541933333336,
+        "wilcoxon_raw_p": 0.23825867101550102,
+        "bca_95_ci": [
+          -0.003841746298032968,
+          0.021284464975388228
+        ],
+        "inside_equivalence_margin_0.015": false,
+        "wilcoxon_holm_p": 0.863037109375
+      },
+      "M5 vs M2 (Macenko mod \u0394F1)": {
+        "paired_diff_mean": -0.009445544814942527,
+        "wilcoxon_raw_p": 0.12065461277961731,
+        "bca_95_ci": [
+          -0.020550414380795655,
+          0.00032287319755177116
+        ],
+        "inside_equivalence_margin_0.015": false,
+        "wilcoxon_holm_p": 0.7239276766777039
+      },
+      "M5 vs M2 (Macenko strong \u0394F1)": {
+        "paired_diff_mean": -0.015559847016091956,
+        "wilcoxon_raw_p": 0.0019781142473220825,
+        "bca_95_ci": [
+          -0.025622592051590117,
+          -0.007494903117874114
+        ],
+        "inside_equivalence_margin_0.015": false,
+        "wilcoxon_holm_p": 0.01582491397857666
+      },
+      "M5 vs M2 (RandStainNA \u0394F1)": {
+        "paired_diff_mean": -0.03040499439655172,
+        "wilcoxon_raw_p": 0.010578293353319168,
+        "bca_95_ci": [
+          -0.05211140843203867,
+          -0.013616066717039403
+        ],
+        "inside_equivalence_margin_0.015": false,
+        "wilcoxon_holm_p": 0.07404805347323418
+      },
+      "M5 vs M3 (CoNSeP clean F1)": {
+        "paired_diff_mean": -0.018824172314285705,
+        "wilcoxon_raw_p": 0.172607421875,
+        "bca_95_ci": [
+          -0.03982535043922954,
+          0.005031473796182182
+        ],
+        "inside_equivalence_margin_0.015": false,
+        "wilcoxon_holm_p": 0.863037109375
+      },
+      "M5 vs M2 (CoNSeP clean F1)": {
+        "paired_diff_mean": -0.011583676040476203,
+        "wilcoxon_raw_p": 0.172607421875,
+        "bca_95_ci": [
+          -0.027827825943631326,
+          0.008443758689694679
+        ],
+        "inside_equivalence_margin_0.015": false,
+        "wilcoxon_holm_p": 0.863037109375
+      }
+    }
   },
   "H3_Calibration": {
-    "comparison": "M5 vs M3 (ECE and Brier score)",
+    "verdict": "NOT TESTABLE",
+    "rule": "Only judge H3 if M5 wins on robustness (otherwise NOT TESTABLE)",
+    "comparison": "M5 vs M3 (ECE under Macenko moderate shift)",
     "paired_diff_mean": 0.0025451391183908055,
     "wilcoxon_raw_p": 0.5361509844660759,
     "wilcoxon_holm_p": 0.5361509844660759,
     "bca_95_ci": [
       -0.00269362446741917,
       0.008998858217290781
-    ],
-    "verdict": "SUPPORTED (CALIBRATION PRESERVED)"
+    ]
   }
 }

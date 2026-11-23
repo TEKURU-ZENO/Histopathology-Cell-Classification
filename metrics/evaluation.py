@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 from sklearn.metrics import f1_score
 
 def compute_macro_f1(y_true, y_pred, num_classes=3):
@@ -76,6 +77,30 @@ def compute_c_err(edge_index, errors):
     both_error = errors[src] & errors[dst]
     return float(np.sum(both_error) / E)
 
+try:
+    import numba
+    @numba.njit
+    def _numba_null_cerr(src, dst, N, n_errors, n_shuffles, E, seed=42):
+        np.random.seed(seed)
+        scores = np.empty(n_shuffles, dtype=np.float32)
+        arr = np.zeros(N, dtype=numba.boolean)
+        indices = np.arange(N)
+        for i in range(n_shuffles):
+            arr.fill(False)
+            for j in range(n_errors):
+                pick = np.random.randint(j, N)
+                indices[j], indices[pick] = indices[pick], indices[j]
+                arr[indices[j]] = True
+            cnt = 0
+            for e in range(E):
+                if arr[src[e]] and arr[dst[e]]:
+                    cnt += 1
+            scores[i] = cnt / E
+        return scores
+    HAS_NUMBA = True
+except Exception:
+    HAS_NUMBA = False
+
 def compute_c_err_with_null(edge_index, errors, n_shuffles=1000, seed=42):
     """
     Computes observed Cerr and compares against a null distribution
@@ -85,7 +110,13 @@ def compute_c_err_with_null(edge_index, errors, n_shuffles=1000, seed=42):
     n_errors = int(np.sum(errors))
     N = len(errors)
 
-    if N <= 1 or n_errors == 0 or n_errors == N:
+    if isinstance(edge_index, torch.Tensor):
+        src, dst = edge_index[0].cpu().numpy().astype(np.int64), edge_index[1].cpu().numpy().astype(np.int64)
+    else:
+        src, dst = edge_index[0].astype(np.int64), edge_index[1].astype(np.int64)
+    E = len(src)
+
+    if N <= 1 or n_errors == 0 or n_errors == N or E == 0:
         return {
             'c_err_obs': c_err_obs,
             'c_err_null_mean': c_err_obs,
@@ -94,17 +125,18 @@ def compute_c_err_with_null(edge_index, errors, n_shuffles=1000, seed=42):
             'p_value': 1.0
         }
 
-    rng = np.random.RandomState(seed)
-    null_scores = np.empty(n_shuffles, dtype=np.float32)
-    
-    # Pre-allocate array of zeros
-    shuffled = np.zeros(N, dtype=bool)
-
-    for i in range(n_shuffles):
-        shuffled.fill(False)
-        perm = rng.choice(N, size=n_errors, replace=False)
-        shuffled[perm] = True
-        null_scores[i] = compute_c_err(edge_index, shuffled)
+    if HAS_NUMBA:
+        null_scores = _numba_null_cerr(src, dst, N, n_errors, n_shuffles, E, seed=seed)
+    else:
+        rng = np.random.RandomState(seed)
+        null_scores = np.empty(n_shuffles, dtype=np.float32)
+        shuffled = np.zeros(N, dtype=bool)
+        for i in range(n_shuffles):
+            shuffled.fill(False)
+            perm = rng.choice(N, size=n_errors, replace=False)
+            shuffled[perm] = True
+            both = shuffled[src] & shuffled[dst]
+            null_scores[i] = float(np.sum(both) / E)
 
     null_mean = float(np.mean(null_scores))
     null_std = float(np.std(null_scores))
